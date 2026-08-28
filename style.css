@@ -43,3 +43,24 @@ button:hover {
     background-color: #b4befe;
     transform: scale(1.05);
 }
+/* Container que ativa o Flexbox */
+.container-cards {
+    display: flex;            /* Coloca os filhos lado a lado */
+    gap: 15px;                /* Espaço entre cada cartão */
+    justify-content: space-between; /* Distribui o espaço por igual */
+    margin-bottom: 25px;
+}
+
+/* Estilo individual de cada cartão */
+.card {
+    background-color: #313244;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;                  /* Faz todos os cartões terem o mesmo tamanho */
+    border: 1px solid #45475a;
+}
+
+.card h4 {
+    color: #89b4fa;
+    margin-top: 0;
+}
