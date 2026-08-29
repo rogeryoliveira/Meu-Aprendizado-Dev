@@ -64,3 +64,15 @@ button:hover {
     color: #89b4fa;
     margin-top: 0;
 }
+/* Adiciona transição suave aos cartões */
+.card {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse por cima do cartão */
+.card:hover {
+    transform: translateY(-5px);         /* Leva o cartão levemente para cima */
+    border-color: #89b4fa;               /* Destaca a borda em azul */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Cria uma sombra para dar efeito de elevação */
+    cursor: pointer;
+}

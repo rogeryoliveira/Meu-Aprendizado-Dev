@@ -46,6 +46,24 @@
     <button onclick="alert('Parabéns, Rogério! Seu primeiro código interativo funcionou!')">
         Clique Aqui!
     </button>
+    <hr>
+
+    <h3>Interatividade com JavaScript:</h3>
+    <button id="btnMensagem">Clique para ver uma mensagem</button>
+    <p id="textoMensagem" style="margin-top: 15px; font-weight: bold; color: #a6e3a1;"></p>
+
+    <script>
+        // Seleciona os elementos do HTML pelo ID
+        const botao = document.getElementById('btnMensagem');
+        const texto = document.getElementById('textoMensagem');
+
+        // Adiciona um ouvinte de clique no botão
+        botao.addEventListener('click', function() {
+            texto.textContent = '🚀 Parabéns, Rogério! Você criou sua primeira manipulação do DOM em JavaScript!';
+        });
+    </script>
+</body>
+</html>
 
 </body>
 </html>
